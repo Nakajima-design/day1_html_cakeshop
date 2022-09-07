@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKE SHOP</title>
+<!-- CSSリンクは相対パスでリンク（同じフォルダ内にあるため）どんな時でも「./」入力でエメット出てくる -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <!-- エメットはa+nav>ul>(li>a)*4使用 -->
+        <a href="">LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#info">INFO</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- エメットsection#*5を使用 -->
+        <section id="mainVisual">
+            <h1>CAKE SHOP</h1>
+        </section>
+
+        <section id="about">
+            <img src="./img/claudia-soares-ewOrvEa87j4-unsplash.jpg" alt="">
+            <!-- エメット　.about_box>h2+p　使用 -->
+            <div class="about_box">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus impedit vero beatae dolorum voluptate inventore numquam enim necessitatibus porro odio.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+
+            <!-- エメット　.gallery_cards>(.item>img)*9　使用 -->
+            <div class="gallery_cards">
+                <div class="item"><img src="./img/ella-olsson-uG1jwfpCRhg-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="./img/jr-r-90HdOlGbjck-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="./img/otto-norin-uG3Vu5TXKxE-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="./img/swapnil-dwivedi-Nl8Oa6ZuNcA-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="./img/marcus-loke-8QRvzJGumSw-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="./img/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+                <div class="item"><img src="" alt=""></div>
+            </div>
+        </section>
+
+        <section id="info">
+            <div class="info_box">
+                <h2>Info</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus impedit vero beatae dolorum voluptate inventore numquam enim necessitatibus porro odio.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.2103337226854!2d141.4954990154792!3d43.079073179145176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2d919b3a2203%3A0x618c15dbcf2c9d73!2zU1VOQUJBQ0_msZ_liKU!5e0!3m2!1sja!2sjp!4v1662528843629!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="faq">
+            <h2>F A Q</h2>
+
+            <!-- エメット　(details>summary+p)*4使用 -->
+            <details>
+                <summary>駐車場はありますか？</summary>
+                <p>あります。Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quod, nisi saepe earum ullam consequatur soluta labore eius inventore!</p>
+            </details>
+            <details>
+                <summary>駐車場はありますか？</summary>
+                <p>あります。Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quod, nisi saepe earum ullam consequatur soluta labore eius inventore!</p>
+            </details>
+            <details>
+                <summary>駐車場はありますか？</summary>
+                <p>あります。Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quod, nisi saepe earum ullam consequatur soluta labore eius inventore!</p>
+            </details>
+            <details>
+                <summary>駐車場はありますか？</summary>
+                <p>あります。Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quod, nisi saepe earum ullam consequatur soluta labore eius inventore!</p>
+            </details>
+        </section>
+    </main>
+    
+    <footer>© 2022 ndesignlabo All Rights Reserved. </footer>
+    
+</body>
+</html>
