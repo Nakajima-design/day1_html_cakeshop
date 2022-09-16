@@ -37,7 +37,6 @@ body {
 	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
 color: rgb(41, 10, 10);
 }
-/* ここから講義コード */
 
 #about, #gallary, #info, #faq {
     width: 80%;
@@ -64,13 +63,17 @@ header ul{
     justify-content: space-around;
 }
 
+.contact_sp {
+    display: none;
+}
+
 #mainVisual {
     width: 100%;
     height: 85vh;
     background: url("../img/ruth-georgiev-dvmiNXMh9d8-unsplash.jpg") no-repeat ;
     background-size: cover;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -97,6 +100,11 @@ header ul{
 #about .about_box, #info .info_box {
     width: 50%;
     padding: 30px;
+}
+
+#gallery h2 {
+    padding-top: 80px;
+    margin-bottom: 20px;
 }
 
 #gallery  .gallery_cards{ 
@@ -126,8 +134,73 @@ header ul{
     text-align: left;
     padding: 10px 30px;
 }
+.contact_title {
+    margin: 100px 20px 60px 20px;
+}
+
+.contact {
+    width:  50%;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+label{
+    margin: 5px 10px;
+    text-align: left;
+    display: block;
+}
+input {
+    width: 100%;
+    height: 30px;
+    border: 0.75px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 10px 16px 10px;
+    padding: 10px;
+}
+
+#message {
+    width: 100%;
+    border: 0.75px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+
+.contact_name {
+
+
+}
+.contact_email {
+
+
+}
+.contact_message {
+
+
+}
+
+
+#btn{
+    width: 60px;
+
+    font-size: 16px;
+    padding: 2px;
+    
+    
+
+}
+
+
+
 
 footer {
+    width: 100%;
     height: 60px;
     background-color: rgb(222, 218, 218);
     text-align: center;
@@ -135,13 +208,21 @@ footer {
 }
 
 @media screen and (max-width:478px) {
-    body {
-        background-color: rgb(39, 23, 162);
+    #menu{
+        display: none;
+    }
+
+    .contact_sp{
+        display: inline;
+        margin: 5px;
     }
 
     #about, #info{
         flex-direction: column;    
     }
+    #about img {
+    width: 100%;
+}
 
     #info iframe{
         width: 100%;
